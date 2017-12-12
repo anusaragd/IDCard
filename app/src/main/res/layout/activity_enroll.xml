@@ -7,227 +7,214 @@
     tools:context="com.example.masters.idcard.EnrollActivity"
     tools:layout_editor_absoluteY="81dp">
 
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StatusView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <TextView
         android:id="@+id/StatusView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="127dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
         android:text="STATUS"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="5dp" />
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="119dp"
-        android:layout_height="123dp"
-        app:srcCompat="@mipmap/ic_launcher"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:layout_width="89dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/YesorNo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <Button
         android:id="@+id/button_READ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="48dp"
         android:text="READ"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="72dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/YesorNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
         android:text="Disconnect"
         android:textColor="#F44336"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="5dp" />
+        app:layout_constraintStart_toEndOf="@+id/StatusView"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
         android:text="SAVE"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="127dp" />
+        app:layout_constraintStart_toStartOf="@+id/button_READ"
+        app:layout_constraintTop_toBottomOf="@+id/button_READ" />
 
-    <ScrollView
-        android:layout_width="384dp"
-        android:layout_height="319dp"
-        android:layout_weight="0.1"
-        tools:layout_editor_absoluteY="192dp">
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:text="ID CARD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/thainame"
+        app:layout_constraintStart_toStartOf="@+id/thainame"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginBottom="27dp"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="ID CARD"
-                app:layout_constraintBottom_toTopOf="@+id/textview1"
-                app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="ชื่อ - นามสกุล"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
-            <EditText
-                android:id="@+id/editText7"
-                android:layout_width="290dp"
-                android:layout_marginBottom="18dp"
-                android:ems="10"
-                android:inputType="number"
-                app:layout_constraintBottom_toTopOf="@+id/textview1"
-                app:layout_constraintEnd_toEndOf="@+id/thainame"
-                app:layout_constraintStart_toStartOf="@+id/thainame" />
+    <EditText
+        android:id="@+id/thainame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textview1"
+        app:layout_constraintStart_toEndOf="@+id/textview1" />
 
-            <TextView
-                android:id="@+id/textview1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="225dp"
-                android:baselineAligned="false"
-                android:text="ชื่อ - นามสกุล"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="NAME "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1" />
 
-            <EditText
-                android:id="@+id/thainame"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="9dp"
-                android:layout_marginTop="45dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toEndOf="@+id/textview1"
-                app:layout_constraintTop_toTopOf="@+id/editText7" />
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/thainame"
+        app:layout_constraintTop_toBottomOf="@+id/textview1" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="26dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="NAME "
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textview1" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="16dp"
+        android:text="วันเกิด"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/editText9"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="@+id/thainame"
-                app:layout_constraintTop_toBottomOf="@+id/thainame" />
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/editText9"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginBottom="23dp"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="วันเกิด"
-                app:layout_constraintBottom_toTopOf="@+id/textView15"
-                app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="16dp"
+        android:text="วันออกบัตร"
+        app:layout_constraintBottom_toBottomOf="@+id/editText12"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/editText11"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:ems="10"
-                android:inputType="date"
-                app:layout_constraintStart_toStartOf="@+id/editText9"
-                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText11"
+        app:layout_constraintTop_toTopOf="@+id/editText11" />
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginBottom="11dp"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="วันออกบัตร"
-                app:layout_constraintBottom_toBottomOf="@+id/editText12"
-                app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="วันหมดอายุ"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText13"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/editText12"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="@+id/editText11"
-                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText14"
+        app:layout_constraintTop_toBottomOf="@+id/editText12" />
 
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="วันหมดอายุ"
-                app:layout_constraintBaseline_toBaselineOf="@+id/editText13"
-                app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="16dp"
+        android:text="ที่อยู่"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/editText13"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintHorizontal_bias="0.621"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText12" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginBottom="37dp"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:text="ที่อยู่"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent" />
-
-            <EditText
-                android:id="@+id/editText14"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:baselineAligned="false"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toStartOf="@+id/editText13"
-                app:layout_constraintTop_toBottomOf="@+id/editText13" />
-
-
-        </LinearLayout>
-    </ScrollView>
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:layout_marginStart="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
 
 
 </android.support.constraint.ConstraintLayout>
