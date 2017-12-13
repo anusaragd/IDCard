@@ -46,27 +46,6 @@ public class ShowroomActivity extends AppCompatActivity {
         });
 
 
-//        Listshow = (ListView)findViewById(R.id.listviewroom);
-//        Listshow.setAdapter(new ArrayAdapter<String>(this,R.array.day));
 
-
-//        Listshow = (ListView)findViewById(R.id.listviewroom);
-//        Listshow.setAdapter(new ArrayAdapter<String>(this,R.array.day));
-
-
-//        String[] list = { "Aerith Gainsborough", "Barret Wallace", "Cait Sith"
-//                , "Cid Highwind", "Cloud Strife", "RedXIII", "Sephiroth"
-//                , "Tifa Lockhart", "Vincent Valentine", "Yuffie Kisaragi"
-//                , "ZackFair" };
-//
-//        CustomAdapter adapter = new CustomAdapter(getApplicationContext(), list, resId);
-//
-//        ListView listView = (ListView)findViewById(R.id.listviewroom);
-////        listView.setAdapter(adapter);
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-//
-//            }
-//        });
     }
 }

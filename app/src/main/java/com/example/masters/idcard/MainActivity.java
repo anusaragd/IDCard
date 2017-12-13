@@ -63,8 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
         Thread nt = new Thread(){
             String res;
-//            EditText user = (EditText)findViewById(R.id.user);
-//            EditText pass = (EditText)findViewById(R.id.pass);
             EditText Username = (EditText)findViewById(R.id.username);
             EditText Password = (EditText)findViewById(R.id.password);
 
@@ -106,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(MainActivity.this,res,Toast.LENGTH_LONG).show();// แสดง Pop - up
+                        Toast.makeText(MainActivity.this,"aaaaaa",Toast.LENGTH_LONG).show();// แสดง Pop - up
                         Intent intent = new Intent(MainActivity.this,ShowroomActivity.class);
                         startActivity(intent);
 
