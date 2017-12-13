@@ -107,11 +107,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(MainActivity.this,res,Toast.LENGTH_LONG).show();// แสดง Pop - up
-                        Intent intent = new Intent(MainActivity.this,EnrollActivity.class);
+                        Intent intent = new Intent(MainActivity.this,ShowroomActivity.class);
                         startActivity(intent);
 
-                        //TextView tt = (TextView)findViewById(R.id.textView4); // ไม่ต้องเอามารับก็ได้
-                        //tt.setText(res);
                     }
 
                 });
