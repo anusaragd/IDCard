@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(i);
 
                 String NAMESPACE ="http://tempuri.org/";
-                String URL ="http://10.0.0.36/webservice/WebService1.asmx?op=Login";
+                String URL ="http://10.0.0.36/webservice/WebService1.asmx?";
                 String METHOD_NAME ="Login";
                 String SOAP_ACTION = "http://tempuri.org/Login";
 

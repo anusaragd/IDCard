@@ -17,6 +17,12 @@ public class ShowroomActivity extends AppCompatActivity {
 //    String [] fiilliste;
     ArrayAdapter<String> adapter;
 
+
+    private static String SOAP_ACTION = "http://tempuri.org/Login";
+    private static String NAMESPACE = "http://tempuri.org/";
+    private static String METHOD_NAME = "Login";
+    private static String URL = "http://10.0.0.36/webservice/WebService1.asmx?op=Login";
+
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
