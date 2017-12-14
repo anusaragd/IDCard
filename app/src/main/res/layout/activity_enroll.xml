@@ -106,7 +106,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/idcard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="9dp"
@@ -116,7 +116,7 @@
                 app:layout_constraintStart_toEndOf="@+id/textview10" />
 
             <TextView
-                android:id="@+id/textview1"
+                android:id="@+id/NameTH"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
@@ -131,46 +131,43 @@
                 android:layout_marginStart="9dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                app:layout_constraintBaseline_toBaselineOf="@+id/textview1"
-                app:layout_constraintStart_toEndOf="@+id/textview1" />
+                app:layout_constraintBaseline_toBaselineOf="@+id/NameTH"
+                app:layout_constraintStart_toEndOf="@+id/NameTH" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/NameENG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
                 android:text="NAME "
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textview1" />
+                app:layout_constraintTop_toBottomOf="@+id/NameTH" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/engname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="9dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="@+id/thainame"
-                app:layout_constraintTop_toBottomOf="@+id/textview1" />
+                app:layout_constraintTop_toBottomOf="@+id/NameTH" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="22dp"
                 android:text="วันเกิด"
                 app:layout_constraintBottom_toTopOf="@+id/textView15"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/bday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="9dp"
                 android:ems="10"
                 android:inputType="date"
-                app:layout_constraintStart_toStartOf="@+id/editText9"
-                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+                app:layout_constraintStart_toStartOf="@+id/engname"
+                app:layout_constraintTop_toBottomOf="@+id/engname" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -181,7 +178,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/editText12"
+                android:id="@+id/DOI"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="9dp"
@@ -194,13 +191,12 @@
                 android:id="@+id/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:text="วันหมดอายุ"
                 app:layout_constraintBaseline_toBaselineOf="@+id/editText13"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/editText13"
+                android:id="@+id/DOE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="9dp"
@@ -213,13 +209,12 @@
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:text="ที่อยู่"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/editText14"
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="9dp"
