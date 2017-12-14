@@ -13,7 +13,6 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.AsyncTask;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Base64;
@@ -316,7 +315,7 @@ public class VerifyActivity extends Activity {
 //        mResponseTextView.setMaxLines(MAX_LINES);
 //        mResponseTextView.setText("");
 
-        mOpenButton = (Button) findViewById(R.id.open);
+        mOpenButton = (Button) findViewById(R.id.open_reg);
         mOpenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
