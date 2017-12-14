@@ -33,10 +33,10 @@
         android:id="@+id/imageView2"
         android:layout_width="166dp"
         android:layout_height="169dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="67dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        android:layout_marginTop="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewID"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -45,43 +45,46 @@
         android:id="@+id/read_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="9dp"
         android:text="READ"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/open"
+        app:layout_constraintTop_toBottomOf="@+id/open" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewID"
         android:layout_width="204dp"
         android:layout_height="41dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="82dp"
+        android:layout_marginTop="80dp"
         android:lineSpacingExtra="18sp"
         android:text="IDcard"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="@+id/Eng_Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/read_button" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="166dp"
+        android:layout_marginBottom="148dp"
+        android:layout_marginTop="147dp"
         android:text="ชื่อ-นามสกุล"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/savebutton"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintStart_toEndOf="@+id/textView7" />
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/read_button" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="์name"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,30 +94,40 @@
         android:id="@+id/savebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginBottom="16dp"
         android:text="SAVE"
-        app:layout_constraintStart_toStartOf="@+id/Eng_Name"
-        app:layout_constraintTop_toBottomOf="@+id/Eng_Name" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/Thai_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="106dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginBottom="18dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintBottom_toTopOf="@+id/Eng_Name"
+        app:layout_constraintStart_toStartOf="@+id/Eng_Name" />
 
     <TextView
         android:id="@+id/Eng_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="18dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/Thai_name"
-        app:layout_constraintTop_toBottomOf="@+id/Thai_name" />
+        app:layout_constraintEnd_toStartOf="@+id/read_button"
+        app:layout_constraintStart_toStartOf="@+id/textViewID"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="76dp"
+        android:text="Open"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

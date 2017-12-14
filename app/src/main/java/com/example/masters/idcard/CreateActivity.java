@@ -7,15 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.ksoap2.SoapEnvelope;
-import org.ksoap2.serialization.SoapObject;
-import org.ksoap2.serialization.SoapPrimitive;
-import org.ksoap2.serialization.SoapSerializationEnvelope;
-import org.ksoap2.transport.HttpTransportSE;
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-
 public class CreateActivity extends AppCompatActivity {
 
     EditText nameroome;
@@ -26,6 +17,34 @@ public class CreateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create);
 
 
-
     }
+
+    public void CreateOnClick(View v) {
+
+
+        nameroome = (EditText) findViewById(R.id.Room_name);
+
+
+        Thread nt = new Thread() {
+
+            @Override
+            public void run() {
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(CreateActivity.this, "aaaaaa", Toast.LENGTH_LONG).show();// แสดง Pop - up
+                        Intent intent = new Intent(CreateActivity.this, ShowroomActivity.class);
+                        startActivity(intent);
+
+                    }
+
+                });
+
+            }
+        };
+
+        nt.start();
+    }
+
 }

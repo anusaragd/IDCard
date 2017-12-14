@@ -5,6 +5,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 SoapObject request = new SoapObject(NAMESPACE,METHOD_NAME);
                 request.addProperty("USR",Username.getText().toString());
                 request.addProperty("PWD",Password.getText().toString());
+
 
                 SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
                 envelope.dotNet = true;
