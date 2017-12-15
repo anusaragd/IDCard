@@ -1,5 +1,6 @@
 package com.example.masters.idcard;
 
+import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -33,7 +34,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class registerActivity extends AppCompatActivity {
+public class registerActivity extends Activity {
 
     private static final String ACTION_USB_PERMISSION = "com.android.example.USB_PERMISSION";
 

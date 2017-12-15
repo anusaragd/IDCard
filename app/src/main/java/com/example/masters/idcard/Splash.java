@@ -1,12 +1,13 @@
 package com.example.masters.idcard;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends Activity {
 
     Handler handler;
     Runnable runnable;
